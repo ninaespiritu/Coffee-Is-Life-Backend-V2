@@ -8,13 +8,11 @@ const ReviewSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true,
-        unique: true
     },
     text: {
         type: String,
         required: true
     },
-
     // Maybe add this idk, depends lol
     rating: {
         type: Number

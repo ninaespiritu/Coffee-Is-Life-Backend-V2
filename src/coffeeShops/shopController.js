@@ -78,7 +78,7 @@ exports.findOnlyReviews = async (req, res) => {
 
 exports.deleteShop = async (req, res) => {
 	try {
-		const shop = await Shop.deleteOne(req.body);
+		const shop = await Shop.deleteOne({ _id: req.body._id });
 		res.status(200).send({ shop });
 	} catch (error) {
 		console.log(error);

@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const Review = require("../reviews/reviewModel");
+// const Review = require("../reviews/reviewModel");
 
 const shopSchema = new mongoose.Schema({
     name: {
@@ -9,7 +9,7 @@ const shopSchema = new mongoose.Schema({
     },
     url: {
         type: String,
-        unique: true,
+        unique: true
     },
     location: {
         type: String,
@@ -20,26 +20,26 @@ const shopSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    reviews: [
-        {
-            username: {
-                type: String,
-                required: true
-            },
-            text: {
-                type: String,
-                required: true
-            },
-            rating: {
-                type: Number
-            }
-        },
-        {
-            type: mongoose.Schema.Types.ObjectId,
-            ref: `${Review}`,
-            unique: false
-        }
-    ]
+    // reviews: [
+    //     {
+    //         username: {
+    //             type: String,
+    //             required: true
+    //         },
+    //         text: {
+    //             type: String,
+    //             required: true
+    //         },
+    //         rating: {
+    //             type: Number
+    //         }
+    //     },
+    //     {
+    //         type: mongoose.Schema.Types.ObjectId,
+    //         ref: `${Review}`,
+    //         unique: false
+    //     }
+    // ]
 });
 
 const Shop = mongoose.model("CIL-Coffee-Shops", shopSchema );

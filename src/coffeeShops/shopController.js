@@ -18,10 +18,10 @@ exports.addShop = async (req, res) => {
 			url: req.body.url,
 			location: req.body.location,
 			description: req.body.description,
-			reviews: [
-				req.body.reviews,
-				await Review.findOne({ name: `${req.body.name}` })
-			]
+			// reviews: [
+			// 	req.body.reviews,
+			// 	await Review.findOne({ name: `${req.body.name}` })
+			// ]
 		});
 		res.status(200).send({ shop: newShop });
 	} catch (error) {

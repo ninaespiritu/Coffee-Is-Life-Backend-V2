@@ -1,7 +1,7 @@
-# Coffee-is-Life-Back-End
+# Coffee-is-Life-Backend
 
 Coffee Is Life is a full-stack MERN application for coffee lovers. Users can signup or login to browse cafes, view information about each shop, and read their reviews. Users are able to write their own reviews and publish them.
 
-[Checkout Front-End.](https://github.com/ninaespiritu/Coffee-Is-Life)
-# Coffee-Is-Life-Backend-V2
-# Coffee-Is-Life-Backend-V2
+<b>NOTE:</b> This version is a copy of the [original repository](https://github.com/Neozxc/Coffee-is-Life-Back-End), but has a new database which is hosted on a different platform following Heroku's elimination of free services.
+
+Check out the website's front-end repository [here.](https://github.com/ninaespiritu/Coffee-Is-Life)
